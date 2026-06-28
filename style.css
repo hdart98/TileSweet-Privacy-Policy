@@ -1,15 +1,531 @@
+```css
+/* =======================================
+   Tile Sweet: Triple Match
+   Official Website Style
+======================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-    font-family:Arial;
-    max-width:900px;
-    margin:auto;
-    padding:40px;
+
+    font-family:
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+    background:
+    linear-gradient(
+    180deg,
+    #fff8fb 0%,
+    #fff5ef 100%);
+
+    color:#444;
+
     line-height:1.8;
+
 }
 
-h1{
-    color:#ff6b81;
+/* ========================= */
+
+.container{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:auto;
+
 }
 
-a{
-    color:#0077cc;
+/* ========================= */
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    background:white;
+
+    box-shadow:
+    0 2px 15px
+    rgba(0,0,0,.08);
+
 }
+
+header .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+header h1{
+
+    color:#ff5a8d;
+
+    font-size:30px;
+
+}
+
+/* ========================= */
+
+nav{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:#555;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#ff5a8d;
+
+}
+
+/* ========================= */
+
+.hero{
+
+    padding:100px 0;
+
+    text-align:center;
+
+}
+
+.hero h2{
+
+    font-size:56px;
+
+    color:#ff4f8d;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    font-size:20px;
+
+    color:#666;
+
+}
+
+/* ========================= */
+
+.buttons{
+
+    margin-top:45px;
+
+}
+
+.button{
+
+    display:inline-block;
+
+    padding:
+
+    16px 34px;
+
+    margin:10px;
+
+    border-radius:50px;
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #ff6da8,
+    #ffb55e);
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+    box-shadow:
+
+    0 8px 25px
+
+    rgba(255,100,150,.3);
+
+}
+
+.button:hover{
+
+    transform:
+
+    translateY(-4px);
+
+    box-shadow:
+
+    0 12px 30px
+
+    rgba(255,100,150,.45);
+
+}
+
+.secondary{
+
+    background:#ffffff;
+
+    color:#ff5b90;
+
+    border:2px solid #ff5b90;
+
+}
+
+/* ========================= */
+
+section{
+
+    padding:90px 0;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    font-size:40px;
+
+    color:#ff5d94;
+
+    margin-bottom:35px;
+
+}
+
+/* ========================= */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 12px 30px
+
+    rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:
+
+    translateY(-8px);
+
+}
+
+.card h3{
+
+    margin-bottom:18px;
+
+    color:#ff5b8d;
+
+}
+
+.card p{
+
+    color:#666;
+
+}
+
+/* ========================= */
+
+ul{
+
+    margin-top:20px;
+
+    margin-left:25px;
+
+}
+
+li{
+
+    margin-bottom:14px;
+
+}
+
+/* ========================= */
+
+footer{
+
+    background:#ff6da8;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+    margin-top:80px;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+}
+
+/* ========================= */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:30px;
+
+}
+
+th{
+
+    background:#ff7aac;
+
+    color:white;
+
+}
+
+th,
+td{
+
+    padding:15px;
+
+    border:1px solid #eee;
+
+}
+
+/* ========================= */
+
+input,
+textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:10px;
+
+    margin-bottom:20px;
+
+    border-radius:12px;
+
+    border:1px solid #ddd;
+
+}
+
+textarea{
+
+    min-height:180px;
+
+}
+
+/* ========================= */
+
+img{
+
+    max-width:100%;
+
+}
+
+/* ========================= */
+
+.notice{
+
+    background:#fff8d5;
+
+    border-left:5px solid orange;
+
+    padding:20px;
+
+    border-radius:10px;
+
+}
+
+/* ========================= */
+
+.success{
+
+    background:#e8fff1;
+
+    border-left:5px solid green;
+
+    padding:20px;
+
+    border-radius:10px;
+
+}
+
+/* ========================= */
+
+.hero{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.card{
+
+    animation:fadeUp 1s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:
+
+        translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+
+        translateY(0);
+
+    }
+
+}
+
+/* ========================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#ff7bab;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#ffeef5;
+
+}
+
+/* ========================= */
+
+@media(max-width:900px){
+
+header .container{
+
+    flex-direction:column;
+
+}
+
+nav{
+
+    margin-top:20px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero h2{
+
+    font-size:38px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+section h2{
+
+    font-size:32px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.button{
+
+    display:block;
+
+    width:100%;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+```
